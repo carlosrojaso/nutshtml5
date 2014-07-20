@@ -64,7 +64,7 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
 
     .state('basico2', {
       url: '/basico2',
-      templateUrl: "templates/1_2s.html",
+      templateUrl: "templates/1_2.html",
     })
 
     .state('won', {
