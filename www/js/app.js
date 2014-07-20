@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ngRoute'])
+angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
 
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -19,12 +19,6 @@ angular.module('starter', ['ionic', 'ngRoute'])
       url: "/sign-in",
       templateUrl: "templates/signin.html",
       controller: 'SignInCtrl'
-    })
-
-    .state('home', {
-      url: "/home",
-      templateUrl: "home.html",
-      controller: 'HomeCtrl'
     })
     // setup an abstract state for the tabs directive
     .state('tab', {
@@ -61,6 +55,21 @@ angular.module('starter', ['ionic', 'ngRoute'])
           templateUrl: 'templates/adopt.html'
         }
       }
+    })
+
+    .state('basico', {
+      url: '/basico',
+      templateUrl: "templates/1.html",
+    })
+
+    .state('basico2', {
+      url: '/basico2',
+      templateUrl: "templates/1_2s.html",
+    })
+
+    .state('won', {
+      url: '/won',
+      templateUrl: "templates/3.html",
     })
 
     .state('tab.about', {

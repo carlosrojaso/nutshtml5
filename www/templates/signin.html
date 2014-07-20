@@ -1,7 +1,10 @@
-<script id="signin.html" type="text/ng-template">
-<ion-view title="Sign-In">
+     <ion-view title="Sign-In">
         <ion-content>
-          <div class="list">
+          <ion-list>
+          <ion-item>
+          <img src="images/logo.png" class="ionic-logo">
+          </ion-item>
+        <ion-item>
             <label class="item item-input">
               <span class="input-label">Username</span>
               <input type="text" ng-model="user.username">
@@ -10,15 +13,16 @@
               <span class="input-label">Password</span>
               <input type="password" ng-model="user.password">
             </label>
-          </div>
-          <div class="padding">
+            <div class="padding">
             <button class="button button-block button-positive" ng-click="signIn(user)">
               Sign-In
             </button>
             <p class="text-center">
-              <a href="#/home">Forgot password</a>
+              <a href="#/tab/adopt">Forgot password</a>
             </p>
           </div>
+          </ion-item>
+        <ion-item>
+          
         </ion-content>
       </ion-view>
-</script>
