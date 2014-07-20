@@ -67,9 +67,24 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       templateUrl: "templates/1_2.html",
     })
 
+    .state('medium', {
+      url: '/medium',
+      templateUrl: "templates/2_1.html",
+    })
+
+    .state('medium2', {
+      url: '/medium2',
+      templateUrl: "templates/2_2.html",
+    })
+
     .state('won', {
       url: '/won',
       templateUrl: "templates/3.html",
+    })
+
+    .state('won2', {
+      url: '/won2',
+      templateUrl: "templates/3_2.html",
     })
 
     .state('tab.about', {
